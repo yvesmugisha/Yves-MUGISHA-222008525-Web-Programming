@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="converter-card">
+    <h1>Currency Converter APP</h1>
+
+    <label for="amount">Enter Amount</label>
+    <input type="number" id="amount" placeholder="Amount" min="0" step="any">
+
+    <label for="currency">Select Currency</label>
+    <select id="currency">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="FRW">FRW</option>
+      <option value="GBP">GBP</option>
+      <option value="JPY">JPY</option>
+    </select>
+
+    <label for="rate">Enter Rate</label>
+    <input type="number" id="rate" placeholder="Exchange Rate" min="0" step="any">
+
+    <button id="convertButton">Convert</button>
+
+    <div class="result-box">
+      <span id="resultText">Result will appear here.</span>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
